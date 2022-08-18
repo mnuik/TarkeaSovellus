@@ -1,6 +1,10 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
+@if (ViewBag.Polku is not null)
+{
+    <p>@ViewBag.Polku</p>
+}
 
 <div class="text-center">
     <h1 class="display-4">Voi pojat, torstai on hieno päivä!</h1>

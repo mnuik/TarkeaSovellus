@@ -12,7 +12,11 @@ namespace TärkeäSovellus.Controllers
         {
             _logger = logger;
         }
-
+        public IActionResult AndreAction()
+        {
+            ViewBag.Polku = "Tultiin AndreAction kautta tänne";
+            return View("Index");
+        }
         public IActionResult Index()
         {
             return View();
