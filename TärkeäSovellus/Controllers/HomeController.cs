@@ -17,6 +17,11 @@ namespace TärkeäSovellus.Controllers
         {
             return View();
         }
+        public IActionResult NikoAction()
+        {
+            ViewBag.Polku = "Tultiin NikoActionin kautta tännä";
+            return View("Index");
+        }
 
         public IActionResult Privacy()
         {
