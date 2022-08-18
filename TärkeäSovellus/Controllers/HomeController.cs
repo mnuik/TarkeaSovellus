@@ -13,6 +13,16 @@ namespace TärkeäSovellus.Controllers
             _logger = logger;
         }
 
+
+        //Tämä lisäys HomeController.cs -tiedostoon
+        public IActionResult AhtiAction()
+        {
+            ViewBag.Polku = "Tultiin AhtiActionin kautta tännä";
+            return View("Index");
+        }
+
+        //kaarlen
+
         public IActionResult Index()
         {
             return View();
