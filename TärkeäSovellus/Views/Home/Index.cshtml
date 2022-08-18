@@ -5,4 +5,8 @@
 <div class="text-center">
     <h1 class="display-4">Voi pojat, torstai on hieno päivä!</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+
+@if(ViewBag.Polku is not null){
+<p>@ViewBag.Polku</p>
+}
 </div>
